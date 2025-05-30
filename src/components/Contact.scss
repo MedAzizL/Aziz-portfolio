@@ -1,0 +1,199 @@
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  text-align: center;
+
+  .section-title {
+    margin-bottom: 2rem;
+  }
+
+  .contact-description {
+    font-size: 1.1rem;
+    color: #636e72;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    line-height: 1.6;
+  }
+
+  .contact-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .info-item {
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(102, 126, 234, 0.1);
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15);
+        border-color: rgba(102, 126, 234, 0.3);
+      }
+
+      .icon-wrapper {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto 1.5rem auto;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+
+        .icon {
+          font-size: 2rem;
+          color: white;
+        }
+      }
+
+      .info-content {
+        h4 {
+          font-size: 1.3rem;
+          font-weight: 700;
+          color: #2d3436;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          color: #636e72;
+          margin: 0;
+          font-size: 1.1rem;
+        }
+
+        .contact-link {
+          color: #636e72;
+          text-decoration: none;
+          font-size: 1.1rem;
+          transition: all 0.3s ease;
+          position: relative;
+
+          &:hover {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .social-section {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #2d3436;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .contact-section {
+    .contact-info-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      max-width: 500px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 0;
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-description {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      padding: 0 1rem;
+    }
+
+    .contact-info-grid {
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+
+      .info-item {
+        padding: 2rem 1.5rem;
+        margin: 0 1rem;
+
+        .icon-wrapper {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 1rem;
+
+          .icon {
+            font-size: 1.5rem;
+          }
+        }
+
+        .info-content {
+          h4 {
+            font-size: 1.1rem;
+          }
+
+          p, .contact-link {
+            font-size: 1rem;
+          }
+        }
+
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+
+    .social-section {
+      margin: 0 1rem;
+      padding: 2rem 1.5rem;
+
+      h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    .contact-info-grid {
+      .info-item {
+        margin: 0 0.5rem;
+        padding: 1.5rem 1rem;
+      }
+    }
+
+    .social-section {
+      margin: 0 0.5rem;
+      padding: 1.5rem 1rem;
+    }
+  }
+}

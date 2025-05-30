@@ -1,0 +1,34 @@
+.footer {
+  margin-bottom: 1rem;
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    .social-links {
+      margin-bottom: 1rem;
+      
+      a {
+        color: rgb(0, 0, 0);
+        font-size: 2.5rem;
+        margin: 0 1rem;
+        transition: all 0.3s ease;
+        
+        &:hover {
+          color: #0984e3;
+          transform: translateY(-3px);
+        }
+
+        &.codeforces-icon {
+          svg {
+            font-size: 2.5rem;
+            position: relative;
+            top: -2px;
+          }
+        }
+      }
+    }
+    
+  }
+}
